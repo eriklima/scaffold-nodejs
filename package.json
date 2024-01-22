@@ -1,0 +1,28 @@
+{
+    "name": "scaffold-nodejs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "test": "vitest",
+        "build": "rimraf ./dist && tsc",
+        "start": "npm run build && node ./dist/app.js"
+    },
+    "keywords": [
+        "scaffold"
+    ],
+    "author": "Erik Lima",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "@tsconfig/node20": "^20.1.2",
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.11.5",
+        "rimraf": "^5.0.5",
+        "typescript": "^5.3.3",
+        "vitest": "^1.2.1"
+    }
+}
