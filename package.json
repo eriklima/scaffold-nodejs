@@ -6,7 +6,7 @@
     "type": "module",
     "scripts": {
         "test": "vitest",
-        "test:e2e": "vitest run --config ./vitest-e2e.json",
+        "test:e2e": "vitest run --config ./vitest.e2e.config.js",
         "build": "rimraf ./dist && tsc -p tsconfig-build.json ",
         "start": "npm run build && node ./dist/src/index.js"
     },

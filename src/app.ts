@@ -4,6 +4,7 @@ import { ApiRoutes } from "./infrastructure/startup/api-routes.js"
 const app = express()
 
 export function buildApp() {
+    app.use(express.json())
     app.use("/api", ApiRoutes.getRoutes())
 
     return app
